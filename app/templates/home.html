@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+
+</head>
+<body>
+<h1>This is a list of users</h1>
+
+
+
+<p>Add users</p>
+<a href="{{url_for('user')}}">Click here</a>
+
+form action="/add_user" method="post">
+    <label for="user">username</label>
+    <input type="text" name="user" id="user">
+    <br><br>
+
+    <input type="submit" value="Add user">
+
+</form>
+</body>
+</html>
